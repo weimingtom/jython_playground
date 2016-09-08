@@ -1,0 +1,20 @@
+string to ast:
+
+Thread [main] (Suspended (breakpoint at line 119 in parser))	
+	parser.parse(InputStream, String, String, CompilerFlags) line: 119	
+	Py.compile_flags(InputStream, String, String, CompilerFlags) line: 1887	
+	Py.compile_flags(String, String, String, CompilerFlags) line: 1896	
+	PythonInterpreter.exec(String) line: 168	
+	Main.main(String[]) line: 18	
+
+ast to class file : 
+	
+Thread [main] (Suspended (breakpoint at line 478 in Module))	
+	Module.PyCode(modType, String, boolean, String, boolean, boolean, int, ScopeInfo, CompilerFlags) line: 478	
+	Module.compile(modType, OutputStream, String, String, boolean, boolean, boolean, CompilerFlags) line: 722	
+	Py.compile_flags(modType, String, String, boolean, boolean, CompilerFlags) line: 1874	
+	Py.compile_flags(InputStream, String, String, CompilerFlags) line: 1891	
+	Py.compile_flags(String, String, String, CompilerFlags) line: 1896	
+	PythonInterpreter.exec(String) line: 168	
+	Main.main(String[]) line: 18	
+	
